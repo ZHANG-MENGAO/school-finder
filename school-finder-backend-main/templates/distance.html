@@ -1,0 +1,21 @@
+{% block content %}
+ <form method="GET"> {% csrf_token %}
+<label>Postal Code:  </label><input type="text" name="From"><br>
+<!-- <br><label>To School:  </label><input type="text" name="To"><br> -->
+<br><label for="To">Select School</label>
+
+<select name="To">
+    <option value="Nanyang Technological University">Nanyang Technological University</option>
+    <option value="National University of Singapore">National University of Singapore</option>
+    <option value="Singapore Management University">Singapore Management University</option>
+</select>
+<br>
+
+<br><button type="submit">Get Distance and Time</button>
+</form>
+{% if distance %}
+<p><strong>Origin {{ distance.origin_addresses }}</strong></p>
+<p><strong>Destination {{ distance.destination_addresses }}</strong></p>
+    <p><strong>Distance and time to school: {{ distance.rows }}</strong></p>
+{% endif %}
+{% endblock %}

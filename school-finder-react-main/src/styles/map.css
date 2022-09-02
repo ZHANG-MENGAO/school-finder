@@ -1,0 +1,46 @@
+.school-map {
+  position: relative;
+  flex: 1;
+  height: 100vh;
+}
+
+.school-marker {
+  stroke: white;
+  stroke-width: 24;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.school-legend {
+  padding: 5px 10px;
+  background-color: white;
+}
+
+.school-legend span {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.primary { 
+  color: #E76F51; 
+  background-color: #E76F51; 
+}
+.secondary { 
+  color: #E9C46A; 
+  background-color: #E9C46A; 
+}
+.junior-college { 
+  color: #F4A261; 
+  background-color: #F4A261; 
+}
+.ite, .poly { 
+  color: #2A9D8F; 
+  background-color: #2A9D8F; 
+}
+.mixed { 
+  color: #264653; 
+  background-color: #264653; 
+}
